@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Karla&family=Montserrat:wght@600;900&family=Nunito&family=Poppins:wght@400;900&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+@font-face {
+    font-family: 'Gaston Demo';
+    src: url('https://files.catbox.moe/9bjofz.woff2') format('woff2'),
+        url('https://files.catbox.moe/2595ej.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1cd5e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.main-content {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    background-image: url("bg.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+main,
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    width: 70rem;
+    margin: 0 auto 0 auto;
+}
+
+
+.graduation {
+    font-family: 'Gaston Demo', sans-serif;
+    color: #f1cd5e;
+    font-size: 5rem;
+    z-index: 100;
+}
+
+.content {}
+
+.party {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 7rem;
+    letter-spacing: 9px;
+
+}
+
+
+.date,
+button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f1cd5e;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border-radius: 20px;
+    font-size: 2rem;
+    letter-spacing: 9px;
+}
+
+.date>p {
+    padding: .4rem 2rem;
+    letter-spacing: 2px;
+
+}
+
+.date>p>span.right {
+    position: relative;
+    left: 3rem;
+}
+
+.date>p>span.left {
+    position: relative;
+    right: 3rem;
+}
+
+header {
+    flex-direction: column;
+    border-radius: 2% 2% 0 0;
+}
+
+
+
+.register-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.register-form>form>input {
+    font-size: 14pt;
+    line-height: 14pt * 2;
+    font-family: 'Fjalla One';
+    margin-bottom: 14pt * 2;
+    border: none;
+    border-bottom: 5px solid rgba(0, 0, 0, 1);
+    min-width: 250px;
+    padding-left: 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 1)
+}
+
+
+footer {
+    flex-direction: column-reverse;
+    border-radius: 0 0 2% 2%;
+}
+
+
+@media (max-width: 1028px) {
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-height: 100vh;
+    }
+
+    header {
+        flex-direction: column;
+        /* border-radius: 3% 3% 0 0; */
+    }
+
+    .main-content {
+        border-radius: 1%;
+        max-height: 100vh;
+    }
+
+    main,
+    header,
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        width: 80vw;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+
+    main>div {
+        position: relative;
+        bottom: 5vh;
+    }
+
+
+    .graduation {
+        font-family: 'Gaston Demo', sans-serif;
+        color: #f1cd5e;
+        font-size: 6vh;
+        z-index: 100;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .party {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 17vw;
+        letter-spacing: 1.5vw;
+        text-align: center;
+        margin-left: 1vw;
+    }
+
+
+    .date {
+        margin-top: 2vh;
+
+        background-color: #f1cd5e;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        border-radius: 20px;
+        font-size: 4vw;
+    }
+
+    .date>p {
+        padding: .5vh 3vw;
+        letter-spacing: .7vw;
+
+    }
+
+    .date>p>span.right {
+        position: relative;
+        left: 6vw;
+    }
+
+    .date>p>span.left {
+        position: relative;
+        right: 6vw;
+    }
+
+    .info{
+        margin-top: -2vh;
+        margin-bottom: 3vh;
+        font-family: 'Montserrat', sans-serif;
+        color: gray;
+    }
+
+    .price{
+        font-size: 8vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .register-form>form>input {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    button {
+        padding: 8px;
+        margin-bottom: 20px;
+        margin-top: 3vw;
+        font-size: 6vw;
+        letter-spacing: 2px;
+    }
+
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+}
