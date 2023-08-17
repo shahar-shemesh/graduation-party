@@ -164,6 +164,7 @@ input::placeholder {
 
 button {
     padding: 8px;
+    z-index: 100;
 }
 
 
